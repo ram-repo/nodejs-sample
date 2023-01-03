@@ -1,11 +1,6 @@
-#!/usr/bin/env groovy
-
 pipeline {
     agent any
-    tools {
-        nodejs 'node-8.1.3'
-    }
-    stages {
+        stages {
         stage('Build') {
             steps {
                 sh 'nodejs --version'
